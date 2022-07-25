@@ -10,6 +10,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/styles/app.css" />
+
+    <!--
+      myMemo:
+      As below, It's not a technical issue to put all the JS code in one HTML file.
+      However, it will make it harder to manage your websites.
+    -->
+    <script>
+      // alert("This works - between script tags!");
+    </script>
+
+    <!--
+      myMemo:
+      The better way to add JS in HTML, is to import JS file as below.
+      Must have the opening and closing separated script tags.
+
+      Note that if you put these script tag at the last part of the body tag,
+      the code in the JS file would be executed after the whole HTML is rendered.
+      Also, the order of script tags matters as well! So, put vendor.js before app.js,
+      if app.js depends on the code in vendor.js.
+    -->
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
   </head>
   <body>
     <header>
